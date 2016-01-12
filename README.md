@@ -1,6 +1,6 @@
 # mtt-evaluation-pets2015
 
-## TBD
+## 1. TBD
 
 ### running procedure in general
 
@@ -15,4 +15,7 @@ Ahhhhh!!!! sir74c hard drive failed, again...third times!!!!
 #### make it work on MacBook Pro (please, dont kill my mac!)
 ok, Im kinda scared of running this thing, considering the damage it has caused to a powerful desktop...
 it may have nothing to do with it in the first place of course...
+
+## 2. DCO_X*
+#### make it work on MBP
 
