@@ -8,9 +8,18 @@ Method   | Authors | Pub. Year | Code/Link | Deps
 ---------| ----    | --- | ----- | -----
 DP_MCF  |H. Pirsiavash | 2011
 TBD  |Andreas Geiger | ICCV'13, PAMI'14
-DCO |  K. Schindler and S. Roth | CVPR'12 | dctracking-v1.0.zip, [dctracking](http://research.milanton.de/dctracking/)
-DCO_X* | K. Schindler and S. Roth | CVPR'13, PAMI'16 | bitbucket:dctracking, [dctracking](http://research.milanton.de/dctracking/) | compileMex, GCO, LightSpeed, MOT utils, OpenGM2
-CEM |K. Schindler and S. Roth | CVPR'11, PAMI'14 |  contracking-v1.0.zip,  [contracking](http://research.milanton.de/contracking/) | MOT utils
+DCO |  K. Schindler and S. Roth | CVPR'12 <sup id="d1">[1](#dco1)</sup> | dctracking-v1.0.zip, [dctracking](http://research.milanton.de/dctracking/)
+DCO_X* | K. Schindler and S. Roth | CVPR'13<sup id="d2">[2](#dco2)</sup>, PAMI'16<sup id="d3">[3](#dco3)</sup> | bitbucket:dctracking, [dctracking](http://research.milanton.de/dctracking/) | compileMex, GCO, LightSpeed, MOT utils, OpenGM2
+CEM |K. Schindler and S. Roth | CVPR'11 <sup id="c1">[4](#cem1)</sup>, ICCV'11 <sup id="c2">[5](#cem2)</sup>,PAMI'14 <sup id="c3">[6](#cem3)</sup> |  contracking-v1.0.zip,  [contracking](http://research.milanton.de/contracking/) | MOT utils
+
+Publications
+ - <a name="dco1">1</a>. CVPR2012_Discrete-Continuous Optimization for Multi-Target Tracking [↩](#d1)
+ - <a name="dco2">2</a>. CVPR2013_Detection- and Trajectory-Level Exclusion in Multiple Object Tracking [↩](#d2)
+ - <a name="dco3">3</a>. PAMI2016_Multi-Target Tracking by Discrete-Continuous Energy Minimization [↩](#d3)
+ - <b name="cem1">4</b>. CVRP2011_Multi-target Tracking by Continuous Energy Minimization [↩](#c1)
+ - <b name="cem2">5</b>. ICCV2011_An Analytical Formulation of Global Occlusion Reasoning for Multi-Target Tracking [↩](#c2)
+ - <b name="cem3">6</b>. PAMI2014_Continuous Energy Minimization for Multi-Target Tracking [↩](#c3)
+
 
 ## Run DCO & DCO_X*
 ###Steps
