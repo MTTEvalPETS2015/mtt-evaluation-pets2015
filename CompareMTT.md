@@ -5,7 +5,7 @@ The following compares the Multi-Target Trackers from **[KITTI benchmark site](h
 
 
 Method   | Authors | Pub. Year | Code/Link | Deps
----------| ----    | ---
+---------| ----    | --- | ----- | -----
 DP_MCF  |H. Pirsiavash | 2011
 TBD  |Andreas Geiger | ICCV'13, PAMI'14
 DCO |  K. Schindler and S. Roth | CVPR'12 | dctracking-v1.0.zip, [dctracking](http://research.milanton.de/dctracking/)
