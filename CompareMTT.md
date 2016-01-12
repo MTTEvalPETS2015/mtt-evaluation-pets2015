@@ -25,10 +25,35 @@ Publications
 ###Steps
 
 1. 
-> hg clone https://bitbucket.org/amilan/contracking
-hg clone https://bitbucket.org/amilan/motutils
-hg clone https://bitbucket.org/amilan/dctracking
+> hg clone https://bitbucket.org/amilan/motutils
+> hg clone https://bitbucket.org/amilan/dctracking
 
+2. cd dctracking, run installDCTracker.m, which runs the following in sequence:
+> - Installing MOT Utils
+> - Installing GCO
+> - Installing Lightspeed
+>  - if atleast78
+>  lightspeed's matfile utility is not supported for this version of Matlab
+> - Installing OpenGM
+
+3. Regarding OpenGM2
+> compileOGM & binaryInference.cxx come with dctracking
+> OpenGM needs separate downloading & compilation with  QPBO and TRW-S support.
+> The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
+
+4. Evaluation metrics
+> - The Multi-Object Track- ing Accuracy (MOTA)
+> - The Multi-Object Detection Accuracy (MODA)
+> - The Multi-Object Tracking Precision (MOTP)
+> - The Multi-Object Detection Precision (MODP)
+> - False positive (FPR) and false negative rates (FNR), as well as the number of identity switches (ID Sw.)
+> - The number of mostly tracked (MT) and mostly lost (ML) trajectories, track fragmentations (FM), and ID switches.
+
+## Run CEM
+### Steps
+1. 
+> hg clone https://bitbucket.org/amilan/contracking
+> hg clone https://bitbucket.org/amilan/motutils
 
 2. 
 > cd contracking;
@@ -37,29 +62,6 @@ hg clone https://bitbucket.org/amilan/dctracking
 
 3. 
 > run cemTrackerDemo.m
-
-4. cd dctracking
-> installDCTracker
->  if atleast78
->  lightspeed's matfile utility is not supported for this version of Matlab
-
-5. Regarding OpenGM2
-> compileOGM & binaryInference.cxx come with dctracking
-> OpenGM needs separate downloading & compilation with  QPBO and TRW-S support.
-> The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
-
-6. Publications
-> - cvpr2012_Discrete-Continuous Optimization for Multi-Target Tracking
-> - cvpr2013_Detection- and Trajectory-Level Exclusion in Multiple Object Tracking
-
-7. Evaluation metrics
-> - The Multi-Object Track- ing Accuracy (MOTA)
-> - The Multi-Object Detection Accuracy (MODA)
-> - The Multi-Object Tracking Precision (MOTP)
-> - The Multi-Object Detection Precision (MODP)
-> - False positive (FPR) and false negative rates (FNR), as well as the number of identity switches (ID Sw.)
-> - The number of mostly tracked (MT) and mostly lost (ML) trajectories, track fragmentations (FM), and ID switches.
-
 
 ## Run TBD
 ### Steps
