@@ -30,10 +30,33 @@ Publications
 
 2. cd dctracking, run installDCTracker.m, which runs the following in sequence:
 > - Installing MOT Utils
+>   - didn't really compile MOT Utils in installDCTracker.m, simply check the existence of its folder `../motutils`
+>   - mex files are compiled in `contracking`, ie. **CEM** in compileMex.m
 > - Installing GCO
 > - Installing Lightspeed
->  - if atleast78
->  lightspeed's matfile utility is not supported for this version of Matlab
+>   - compiled! with warning msg: lightspeed's matfile utility is not supported for this version of Matlab
+>   - from: 
+```
+> if atleast78
+	disp('lightspeed''s matfile utility is not supported for this version of Matlab');
+elseif atleast65
+      % -V5 is required only for Matlab >=6.5
+      mex -f matopts.sh matfile.c -V5
+else
+      mex -f matopts.sh matfile.c
+end  
+```
+where
+```
+atleast65 = (v(1)>6 || (v(1)==6 && v(2)>=5));
+atleast73 = (v(1)>7 || (v(1)==7 && v(2)>=3));
+atleast75 = (v(1)>7 || (v(1)==7 && v(2)>=5));
+atleast76 = (v(1)>7 || (v(1)==7 && v(2)>=6));
+atleast78 = (v(1)>7 || (v(1)==7 && v(2)>=8)); % R2009a
+atleast82 = (v(1)>8 || (v(1)==8 && v(2)>=2)); % R2013b
+atleast83 = (v(1)>8 || (v(1)==8 && v(2)>=3)); % R2014a
+```
+
 > - Installing OpenGM
 
 3. Regarding OpenGM2
