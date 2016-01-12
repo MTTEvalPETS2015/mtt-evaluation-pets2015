@@ -10,5 +10,9 @@
 2. compile the implementation of the Hungarian algorithm
 > running make.m in the tracking directory
 3. run the object detector
-4. run_tracking.m
-5. 
+Ahhhhh!!!! sir74c hard drive failed, again...third times!!!!
+
+#### make it work on MacBook Pro (please, dont kill my mac!)
+ok, Im kinda scared of running this thing, considering the damage it has caused to a powerful desktop...
+it may have nothing to do with it in the first place of course...
+
