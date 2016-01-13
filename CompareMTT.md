@@ -24,11 +24,11 @@ Publications
 ## Run DCO & DCO_X*
 ###Steps
 
-1. 
+(1) 
 > hg clone https://bitbucket.org/amilan/motutils
 > hg clone https://bitbucket.org/amilan/dctracking
 
-2. cd dctracking, run installDCTracker.m, which runs the following in sequence:
+(2) cd dctracking, run installDCTracker.m, which runs the following in sequence:
 > - Installing MOT Utils
 >   - didn't really compile MOT Utils in installDCTracker.m, simply check the existence of its folder `../motutils`
 >   - mex files are compiled in `contracking`, ie. **CEM** in compileMex.m
@@ -57,14 +57,14 @@ atleast82 = (v(1)>8 || (v(1)==8 && v(2)>=2)); % R2013b
 atleast83 = (v(1)>8 || (v(1)==8 && v(2)>=3)); % R2014a
 ```
 
-3. Regarding OpenGM2
+(3) Regarding OpenGM2
 > - after successful installation of OpenGM2, installDCTracker.m will call compileOGM.m from dctracking/opengm folder to mex-compile binaryInference.cxx in the same folder
 
 > - OpenGM needs separate downloading & compilation with  QPBO and TRW-S support.
 
 > - The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
 
-4. Evaluation metrics
+(4) Evaluation metrics
 > - The Multi-Object Track- ing Accuracy (MOTA)
 > - The Multi-Object Detection Accuracy (MODA)
 > - The Multi-Object Tracking Precision (MOTP)
