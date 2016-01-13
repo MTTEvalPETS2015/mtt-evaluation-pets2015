@@ -56,14 +56,12 @@ Publications
 	atleast82 = (v(1)>8 || (v(1)==8 && v(2)>=2)); % R2013b
 	atleast83 = (v(1)>8 || (v(1)==8 && v(2)>=3)); % R2014a
 	```
->   - Installing OpenGM2
+> - Installing OpenGM2
 
 3. Regarding OpenGM2
 > - after successful installation of OpenGM2, installDCTracker.m will call compileOGM.m from dctracking/opengm folder to mex-compile binaryInference.cxx in the same folder
-
 > - OpenGM needs separate downloading & compilation with  QPBO and TRW-S support.
-
-> - The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
+>- The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
 
 4. Evaluation metrics
 > - The Multi-Object Track- ing Accuracy (MOTA)
