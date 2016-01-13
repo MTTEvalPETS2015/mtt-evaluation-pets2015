@@ -24,11 +24,11 @@ Publications
 ## Run DCO & DCO_X*
 ###Steps
 
-(1) 
+1. 
 > hg clone https://bitbucket.org/amilan/motutils
 > hg clone https://bitbucket.org/amilan/dctracking
 
-(2) cd dctracking, run installDCTracker.m, which runs the following in sequence:
+2. cd dctracking, run installDCTracker.m, which runs the following in sequence:
 > - Installing MOT Utils
 >   - didn't really compile MOT Utils in installDCTracker.m, simply check the existence of its folder `../motutils`
 >   - mex files are compiled in `contracking`, ie. **CEM** in compileMex.m
@@ -36,35 +36,36 @@ Publications
 > - Installing Lightspeed
 >   - compiled! with warning msg: lightspeed's matfile utility is not supported for this version of Matlab
 >   - from: 
-```
-if atleast78
-	disp('lightspeed''s matfile utility is not supported for this version of Matlab');
-elseif atleast65
-      % -V5 is required only for Matlab >=6.5
-      mex -f matopts.sh matfile.c -V5
-else
-      mex -f matopts.sh matfile.c
-end  
-```
-where
-```
-atleast65 = (v(1)>6 || (v(1)==6 && v(2)>=5));
-atleast73 = (v(1)>7 || (v(1)==7 && v(2)>=3));
-atleast75 = (v(1)>7 || (v(1)==7 && v(2)>=5));
-atleast76 = (v(1)>7 || (v(1)==7 && v(2)>=6));
-atleast78 = (v(1)>7 || (v(1)==7 && v(2)>=8)); % R2009a
-atleast82 = (v(1)>8 || (v(1)==8 && v(2)>=2)); % R2013b
-atleast83 = (v(1)>8 || (v(1)==8 && v(2)>=3)); % R2014a
-```
+	```
+	if atleast78
+		disp('lightspeed''s matfile utility is not supported for this version of Matlab');
+	elseif atleast65
+	      % -V5 is required only for Matlab >=6.5
+	      mex -f matopts.sh matfile.c -V5
+	else
+	      mex -f matopts.sh matfile.c
+	end  
+	```
+	where
+	```
+	atleast65 = (v(1)>6 || (v(1)==6 && v(2)>=5));
+	atleast73 = (v(1)>7 || (v(1)==7 && v(2)>=3));
+	atleast75 = (v(1)>7 || (v(1)==7 && v(2)>=5));
+	atleast76 = (v(1)>7 || (v(1)==7 && v(2)>=6));
+	atleast78 = (v(1)>7 || (v(1)==7 && v(2)>=8)); % R2009a
+	atleast82 = (v(1)>8 || (v(1)==8 && v(2)>=2)); % R2013b
+	atleast83 = (v(1)>8 || (v(1)==8 && v(2)>=3)); % R2014a
+	```
+>   - Installing OpenGM2
 
-(3) Regarding OpenGM2
+3. Regarding OpenGM2
 > - after successful installation of OpenGM2, installDCTracker.m will call compileOGM.m from dctracking/opengm folder to mex-compile binaryInference.cxx in the same folder
 
 > - OpenGM needs separate downloading & compilation with  QPBO and TRW-S support.
 
 > - The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
 
-(4) Evaluation metrics
+4. Evaluation metrics
 > - The Multi-Object Track- ing Accuracy (MOTA)
 > - The Multi-Object Detection Accuracy (MODA)
 > - The Multi-Object Tracking Precision (MOTP)
