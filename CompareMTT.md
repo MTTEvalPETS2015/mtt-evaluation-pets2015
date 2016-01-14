@@ -61,7 +61,15 @@ Publications
 3. Regarding OpenGM2
 > - after successful installation of OpenGM2, installDCTracker.m will call compileOGM.m from dctracking/opengm folder to mex-compile binaryInference.cxx in the same folder
 > - OpenGM needs separate downloading & compilation with  QPBO and TRW-S support.
->- The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
+> - The original script **installDCTracker.m**will download OpenGM via _git_ then build the entire library under $dcdir/external/opengm/BUILD/src/external
+> - I've downloaded the most recent OpenGM2 to opengm-master, then compiled in the usual CMAKE way
+>   - patched QPBO-v1.3.src-patched & TRWS-v1.3.src-patched to have QPBO and TRW-S support
+> - Modified include/library path in compileOGM.m so that binaryInference.cxx can be compiled properly
+
+4. Ground truth
+If ground truth available, the code will automatically produce evaluated results using the same matrics as in their paper
+
+
 
 4. Evaluation metrics
 > - The Multi-Object Track- ing Accuracy (MOTA)
