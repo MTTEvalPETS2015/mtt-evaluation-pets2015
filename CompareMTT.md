@@ -67,8 +67,9 @@ Publications
 > - Modified include/library path in compileOGM.m so that binaryInference.cxx can be compiled properly
 
 4. Ground truth
-If ground truth available, the code will automatically produce evaluated results using the same matrics as in their paper
 
+If ground truth available, the code will automatically produce evaluated results using the same matrics as in their paper
+> - resurrect the c++ visualisation program I've written over 3 years ago
 
 
 4. Evaluation metrics
