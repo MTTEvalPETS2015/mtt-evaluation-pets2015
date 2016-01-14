@@ -68,7 +68,7 @@ Publications
 
 4. Ground truth
 
-If ground truth available, the code will automatically produce evaluated results using the same matrics as in their paper
+   If ground truth available, the code will automatically produce evaluated results using the same matrics as in their paper
 > - resurrect the c++ visualisation program I've written over 3 years ago
 
 
