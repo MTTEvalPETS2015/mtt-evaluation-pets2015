@@ -13,6 +13,9 @@ DCO_X* | K. Schindler and S. Roth | CVPR'13<sup id="d2">[2](#dco2)</sup>, PAMI'1
 CEM |K. Schindler and S. Roth | CVPR'11 <sup id="c1">[4](#cem1)</sup>, ICCV'11 <sup id="c2">[5](#cem2)</sup>,PAMI'14 <sup id="c3">[6](#cem3)</sup> |  contracking-v1.0.zip,  [contracking](http://research.milanton.de/contracking/) | MOT utils
 SDS | M. Evans, J. Boyle | PETS 15 | n/a | cvg framework
 MDP | Y. Xiang, A. Alahi, S. Savarese | ICCV'15 <sup id="mdp1">[8](#mdp2)</sup> | [Markov Decision Processes ](http://cvgl.stanford.edu/projects/MDP_tracking/) | UNKNOW
+ELP | N. McLaughlin, J. Martinez Del Rincon, P. Miller | WACV'15 <sup id="elp1">[9](#elp2)</sup> | [Enhancing Linear Programming](https://github.com/niallmcl/ELP-Tracker) | UNKNOWN
+SegTrack | A. Milan, L. Leal-Taixé, K. Schindler, I. Reid | CVPR'15 <sup id="segTrack1">[10](#segTrack2)</sup> | [Joint Tracking and Segmentation](http://research.milanton.net/segtracking/) | UNKNOW
+
 
 Publications
  - <a name="dco1">1</a>. CVPR2012_Discrete-Continuous Optimization for Multi-Target Tracking [↩](#d1)
@@ -21,7 +24,9 @@ Publications
  - <b name="cem1">4</b>. CVRP2011_Multi-target Tracking by Continuous Energy Minimization [↩](#c1)
  - <b name="cem2">5</b>. ICCV2011_An Analytical Formulation of Global Occlusion Reasoning for Multi-Target Tracking [↩](#c2)
  - <b name="cem3">6</b>. PAMI2014_Continuous Energy Minimization for Multi-Target Tracking [↩](#c3)
- - <b name="mdp2">8</b>. ICCV2015_ Learning to Track: Online Multi-Object Tracking by Decision Making[↩](#mdp1)
+ - <b name="mdp2">8</b>. ICCV2015_Learning to Track: Online Multi-Object Tracking by Decision Making[↩](#mdp1)
+ - <b name="elp2">9</b>. WACV2015_Enhancing Linear Programming with Motion Modeling for Multi-target Tracking[↩](#elp1)
+ - <b name="segTrack2">10</b>. CVPR2015_Joint Tracking and Segmentation of Multiple Targets[↩](#segTrack1)
 
 
 ## Run DCO & DCO_X*
