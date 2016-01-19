@@ -28,6 +28,26 @@ Publications
  - <b name="elp2">9</b>. WACV2015_Enhancing Linear Programming with Motion Modeling for Multi-target Tracking[↩](#elp1)
  - <b name="segTrack2">10</b>. CVPR2015_Joint Tracking and Segmentation of Multiple Targets[↩](#segTrack1)
 
+### DCO_X*
+#### Detections
+```matlab
+[metrics2d, metrics3d, allen, stateInfo, sceneInfo] = ...
+swDCTracker('scenes/PETS15_P5_W1_P5-Tg_VS_1.ini','config/default2dSimple.ini');
+```
+(1) swDCTracker(scen,optfile,swfile) ---> scenario=scen --->
+
+(2) sceneInfo=getSceneInfo(scenario,opti); --->
+> - if scenario is an integer, then sets all options case by case according to that integer
+> - if scenarios is a string point to a ini file, then using the following funciton to read scene info
+
+(3) sceneInfo=readSceneOptions(scenario);
+
+
+
+#### Track output
+motutils/displayTrackingResult.m ---> 
+
+
 
 ## Run DCO & DCO_X*
 ###Steps
