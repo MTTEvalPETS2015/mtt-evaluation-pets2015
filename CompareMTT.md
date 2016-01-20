@@ -45,7 +45,8 @@ swDCTracker('scenes/PETS15_P5_W1_P5-Tg_VS_1.ini','config/default2dSimple.ini');
 
 
 #### Track output
-motutils/displayTrackingResult.m ---> 
+motutils/displayTrackingResult.m ---> displayTrackingResult(stateInfo.sceneInfo, stateInfo);
+> - sceneInfo is a member of stateInfo
 
 
 
