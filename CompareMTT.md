@@ -62,6 +62,9 @@ motutils/displayTrackingResult.m ---> displayTrackingResult(stateInfo.sceneInfo,
 >   - didn't really compile MOT Utils in installDCTracker.m, simply check the existence of its folder `../motutils`
 >   - mex files are compiled in `contracking`, ie. **CEM** in compileMex.m
 > - Installing GCO
+>   - Compiled successfully, **BUT NOT USED IN DCO_X*!**
+>   - Instead, DCO have to use it by addpath() when running in DCO folder, ie. `dctracking-v1.0/dcTrackerDemo.m`
+>   - Because the MEX files of gco-v3.0 included in *dctracking-v1.0* are out of dated for my laptop (matlab 2015b etc.)
 > - Installing Lightspeed
 >   - compiled! with warning msg: lightspeed's matfile utility is not supported for this version of Matlab
 >   - from: 
